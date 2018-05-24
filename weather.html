@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+<link rel="stylesheet" type="text/css" href="weather.css">
+<script src="weather.js"></script>
+  <script src="check2.js"></script> 
+<script src="wheapi.js"></script>
+   <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map1 {
+        height: 80%;
+        width: 100%;
+      }
+      #map {
+        height: 100%;
+        width: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+     
+    </style>
+  </head>
+  <body>
+    <section  id="desk">
+      <script type="text/javascript">
+        check("desktop");
+      </script>
+    <div class="container-fluid border d-none d-sm-none d-md-block d-lg-block">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="head">Weather Information</h1>
+        </div>
+      </div>
+      <div class="row map">
+        <div class="col-sm-8">
+          <div id="map"></div>
+        </div>
+        <div class="col-sm-4">
+          <div class="weatherResponse">
+            <div>
+          <input type="text" placeholder="Enter the place name" name="place" id="place" style="width: 100%;" /><br>
+    <input type="button"  name="button" onclick="getWhether1('desktop')" value="Get Weather Info">
+          </div>
+          <div class="weatherResponse1" ></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section onload="check('mobile')">
+    <script type="text/javascript">
+        check("mobile");
+      </script>
+    
+<div class="container-fluid d-block d-sm-block d-md-none d-lg-none">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="head">Weather Information</h1>
+        </div>
+      </div>
+      <div class="row map1">
+        <div class="col-sm-12">
+          <div id="map1"></div>
+        </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+          <div class="weatherResponse">
+            <div>
+          <input type="text" placeholder="Enter the place name" name="place" id="place1" style="width: 100%;" /><br>
+    <input type="button"  name="button" onclick="getWhether1('mobile')" value="Get Weather Info">
+          </div>
+          <div class="weatherResponse1" id="mobile"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqeBNlvb4jGW5aaBvAuzNkRDuXgV07VRc&callback=initMap">
+    </script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/monkeecreate/jquery.simpleWeather/master/jquery.simpleWeather.min.js"></script>
+  </body>
+</html>

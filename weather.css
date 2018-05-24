@@ -1,0 +1,40 @@
+
+
+
+    .map{
+    	background-color: #394d68;
+    	font-size: 15px;
+    	padding: 5px;
+    	height: 90vh;
+
+    }
+    .head{
+
+    	text-align: center;
+    	background-color:navy;
+    	color: white;
+    	font-weight: bolder;
+    	position: static;
+    	opacity: 0.7;
+    }
+
+
+    .map1{
+    	background-color: #394d68;
+    	font-size: 15px;
+    	padding: 5px;
+    	height: 60vh;
+
+    }
+    .decorate{
+    	margin-top: 5%;
+    	padding-bottom: 2%;
+    }
+
+    .weatherResponse1{
+    	font-size: 20px;
+    	color: black;
+    }
+    #mobile{
+    	color: red;
+    }
